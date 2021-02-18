@@ -66,7 +66,7 @@ def main(Data, Ped, Station, Run, Output):
             trig = 'Cal'
         elif rawEvent.isSoftwareTrigger() == 0 and rawEvent.isCalpulserEvent() == 0:
             trig = 'RF'
-        #g1.attrs['Trigger'] = trig
+        g1.attrs['Trigger'] = trig
 
         evt_timeStamp = []
 
