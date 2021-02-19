@@ -1,7 +1,7 @@
 import numpy as np
 import os, sys
 import h5py
-from tqdm import tqdm
+#from tqdm import tqdm
 
 # cern root lib
 import ROOT
@@ -48,7 +48,8 @@ def main(Data, Ped, Station, Run, Output):
 
     # loop over the events
     print('event loop starts!')
-    for event in tqdm(range(num_events)):
+    #for event in tqdm(range(num_events)):
+    for event in range(num_events):
 
         # get the desire event
         eventTree.GetEntry(event)
